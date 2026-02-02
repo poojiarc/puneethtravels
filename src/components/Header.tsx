@@ -62,7 +62,7 @@ const Header = () => {
           {/* Logo */}
           <a href="#home" onClick={() => handleNavClick('#home')} className="flex items-center gap-3 flex-shrink-0">
             <img src={logo} alt="Puneeth Travels" className="h-12 md:h-14 w-auto" />
-            <div className="hidden sm:flex flex-col">
+            <div className="sm:flex flex-col">
               <span className="font-heading font-bold text-lg md:text-xl leading-tight">
                 <span className="text-primary-foreground">PUNEETH</span>{' '}
                 <span className="text-accent">TRAVELS</span>
