@@ -60,8 +60,17 @@ const Header = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#home" onClick={() => handleNavClick('#home')} className="flex-shrink-0">
-            <img src={logo} alt="Puneeth Travels" className="h-12 md:h-16 w-auto" />
+          <a href="#home" onClick={() => handleNavClick('#home')} className="flex items-center gap-3 flex-shrink-0">
+            <img src={logo} alt="Puneeth Travels" className="h-12 md:h-14 w-auto" />
+            <div className="hidden sm:flex flex-col">
+              <span className="font-heading font-bold text-lg md:text-xl leading-tight">
+                <span className="text-primary-foreground">PUNEETH</span>{' '}
+                <span className="text-accent">TRAVELS</span>
+              </span>
+              <span className="text-primary-foreground/60 text-[10px] md:text-xs tracking-wider">
+                be a safe journey
+              </span>
+            </div>
           </a>
 
           {/* Desktop Navigation */}

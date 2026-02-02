@@ -60,7 +60,18 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <img src={logo} alt="Puneeth Travels" className="h-16 w-auto mb-4" />
+            <div className="flex items-center gap-3 mb-4">
+              <img src={logo} alt="Puneeth Travels" className="h-14 w-auto" />
+              <div className="flex flex-col">
+                <span className="font-heading font-bold text-lg leading-tight">
+                  <span className="text-primary-foreground">PUNEETH</span>{' '}
+                  <span className="text-accent">TRAVELS</span>
+                </span>
+                <span className="text-primary-foreground/60 text-[10px] tracking-wider">
+                  be a safe journey
+                </span>
+              </div>
+            </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-4">
               Your trusted travel partner in Visakhapatnam. 24/7 reliable taxi service for all your travel needs.
             </p>
